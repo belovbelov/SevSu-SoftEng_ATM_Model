@@ -4,7 +4,8 @@
     {
         public override void Notificate(ATMData atmData)
         {
-        return;
+            var collectors = new MoneyCollection();
+            collectors.CollectMoney(atmData);
         }
     }
 }

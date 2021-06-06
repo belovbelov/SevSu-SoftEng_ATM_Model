@@ -6,6 +6,9 @@ namespace ATM.Notifications
     {
         public override void Notificate(ATMData atmData)
         {
-         return;
+            Console.WriteLine("Notification: NOT ENOUGH MONEY");
+            var collectors = new MoneyCollection();
+            collectors.BringMoney(atmData);
         }
-    } }
+    } 
+}

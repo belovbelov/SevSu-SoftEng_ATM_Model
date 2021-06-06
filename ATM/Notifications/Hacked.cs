@@ -6,7 +6,10 @@ namespace ATM.Notifications
     {
         public override void Notificate(ATMData atmData)
         {
-            return;
+            Console.WriteLine("Notification: Hack attempt was spotted! Call security?");
+            Console.ReadLine();
+            Console.WriteLine("Notification: Security is on their way!");
+            Console.WriteLine(Bank.Instance.GetSecurity(atmData));
         }
     }
 }
