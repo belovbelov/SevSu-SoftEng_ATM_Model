@@ -7,7 +7,12 @@ namespace ATM.Operations
         private int depositAmount;
         public override void ManipulateAccount(Card card, ATMData atmData)
         {
-         return;
+            Console.Write("Operation: Insert deposit amount: ");
+            depositAmount = Convert.ToInt32(Console.ReadLine());
+            card.Account.Balance += depositAmount;
+            atmData.Money += depositAmount;
         }
+
+  
     }
 }

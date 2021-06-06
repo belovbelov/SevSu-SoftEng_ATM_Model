@@ -7,7 +7,17 @@ namespace ATM.Operations
         private string newPIN;
         public override void ManipulateAccount(Card card, ATMData atmData)
         {
-            return;
+            ChangePin(card);
         }
+
+        private void ChangePin(Card card)
+        {
+            Console.Write("Operation: Insert new PIN:");
+            newPIN = Convert.ToString(Console.ReadLine());
+            Bank.Instance.SavePIN(card,newPIN);
+        }
+
+        
+
     }
 }
