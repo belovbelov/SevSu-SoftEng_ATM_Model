@@ -31,6 +31,9 @@ namespace ATM.Operations
             }
         }
 
-        
+        public void InputAmount(int _amount)
+        {
+            withdrawAmount = _amount;
+        }
     }
 }

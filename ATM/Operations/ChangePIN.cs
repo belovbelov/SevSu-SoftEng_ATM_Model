@@ -17,7 +17,9 @@ namespace ATM.Operations
             Bank.Instance.SavePIN(card,newPIN);
         }
 
-        
-
+        public void InputPin(string _pin)
+        {
+            newPIN = _pin;
+        }
     }
 }

@@ -10,5 +10,4 @@ namespace ATM.Notifications
             var collectors = new MoneyCollection();
             collectors.BringMoney(atmData);
         }
-    } 
-}
+    } }

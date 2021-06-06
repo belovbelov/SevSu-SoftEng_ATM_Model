@@ -13,6 +13,9 @@ namespace ATM.Operations
             atmData.Money += depositAmount;
         }
 
-  
+        public void InputAmount(int _amount)
+        {
+            depositAmount = _amount;
+        }
     }
 }
