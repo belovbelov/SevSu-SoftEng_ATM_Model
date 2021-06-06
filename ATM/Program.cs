@@ -69,10 +69,52 @@ namespace ATM
                     }
                     case 2:
                     {
+                        while (true)
+                        {
+                            Console.Clear();
+                            Console.WriteLine("View notifications...");
+                            Console.ReadKey();
+                            Console.WriteLine("Choose type of notification:");
+                            Console.WriteLine("1 Hacked");
+                            Console.WriteLine("2 Lack of Money");
+                            Console.WriteLine("3 Money Overflow");
+                            Console.WriteLine("4 Exit");
+                            mode = Convert.ToInt32(Console.ReadLine());
+                            if (mode == 4)
+                            {
+                                break;
+                            }
+                            atmData.SendNotification(ChooseNotification(mode));
+                        }
+
                         break;
                     }
                     case 3:
                         return;
+                }
+            }
+        }
+
+        private static Notification ChooseNotification(int mode)
+        {
+            switch (mode)
+            {
+                case 1:
+                {
+                    return new Hacked();
+                }
+                case 2:
+                {
+                    return new MoneyLack();
+                }
+                case 3:
+                {
+                    return new MoneyOverflow();
+                }
+                default:
+                {
+                    Console.WriteLine("Wrong type of notification!");
+                    throw new NotSupportedException();
                 }
             }
         }

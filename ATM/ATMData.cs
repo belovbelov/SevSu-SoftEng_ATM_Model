@@ -30,12 +30,12 @@ namespace ATM
 
         public void SendNotification(Notification notification)
         {
-            return;
+            notification.Notificate(this);
         }
 
         public void InitiateOperation(Operation operation,Card card)
         {
-            return;
+            operation.ManipulateAccount(card,this);
         }
     }
 }
