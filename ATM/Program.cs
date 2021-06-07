@@ -16,6 +16,7 @@ namespace ATM
             int mode;
             Console.Clear();
             
+
             var atmData = Bank.Instance.ServiceATM("Ул. Пушкина");
             while (true)
             {
