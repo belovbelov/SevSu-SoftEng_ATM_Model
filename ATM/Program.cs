@@ -10,6 +10,8 @@ namespace ATM
     {
         static void Main(string[] args)
         {
+
+
             
             int mode;
             Console.Clear();
