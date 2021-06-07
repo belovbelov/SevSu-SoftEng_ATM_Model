@@ -10,7 +10,7 @@ namespace ATM
     {
         static void Main(string[] args)
         {
-
+//HELLO  CONFLICT
 
             
             int mode;
@@ -24,7 +24,6 @@ namespace ATM
                 {
                     case 1:
                     {
-// hehehe
                             Console.Clear();
                             Console.Write("Input your name:");
                             var name = Convert.ToString(Console.ReadLine());
@@ -114,11 +113,11 @@ namespace ATM
                 {
                     return new MoneyOverflow();
                 }
-                //default:
-                //{
-                //    Console.WriteLine("Wrong type of notification!");
-                //    throw new NotSupportedException();
-                //}
+                default:
+                {
+                    Console.WriteLine("Wrong type of notification!");
+                    throw new NotSupportedException();
+                }
             }
         }
 
