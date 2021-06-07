@@ -114,11 +114,11 @@ namespace ATM
                 {
                     return new MoneyOverflow();
                 }
-                default:
-                {
-                    Console.WriteLine("Wrong type of notification!");
-                    throw new NotSupportedException();
-                }
+                //default:
+                //{
+                //    Console.WriteLine("Wrong type of notification!");
+                //    throw new NotSupportedException();
+                //}
             }
         }
 
